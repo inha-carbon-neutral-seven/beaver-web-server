@@ -4,10 +4,10 @@ from typing import TypeVar
 
 from langchain.chains import LLMChain
 from langchain.output_parsers import PydanticOutputParser
+from langchain.pydantic_v1 import BaseModel
 from langchain_core.exceptions import OutputParserException
 from langchain_core.prompts import PromptTemplate
 from langchain_openai.chat_models import ChatOpenAI
-from pydantic import BaseModel
 
 
 JSON_FORMATTING_TEMPLATE = """{format_instructions}

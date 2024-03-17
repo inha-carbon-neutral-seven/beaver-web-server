@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import List, Optional, Union
 
-from pydantic import BaseModel, Field
+from langchain.pydantic_v1 import BaseModel, Field
 
 from .chart import ChartOutput
 from .recap import RecapOutput

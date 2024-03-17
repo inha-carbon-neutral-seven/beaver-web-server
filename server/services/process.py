@@ -9,10 +9,10 @@ from typing import Any
 
 import faiss
 
+from langchain.pydantic_v1_core import ValidationError
 from langchain_core.exceptions import OutputParserException
 from llama_index import SimpleDirectoryReader, StorageContext, VectorStoreIndex
 from llama_index.vector_stores.faiss import FaissVectorStore
-from pydantic_core import ValidationError
 
 from ..models.chart import ChartType
 from ..models.process import ProcessOutput, ProcessType

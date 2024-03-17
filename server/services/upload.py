@@ -5,8 +5,8 @@ POST /upload
 
 import numpy as np
 
+from langchain.pydantic_v1 import BaseModel
 from pandas import DataFrame
-from pydantic import BaseModel
 
 from .storage import clear_storage, load_dataframe, save_file
 

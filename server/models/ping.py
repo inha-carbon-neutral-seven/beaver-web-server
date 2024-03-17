@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from langchain.pydantic_v1 import BaseModel, Field
 
 
 # 서버 상태를 확인할 때 사용하는 모델
